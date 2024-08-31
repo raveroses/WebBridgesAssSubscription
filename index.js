@@ -139,21 +139,99 @@ const profile= document.querySelector(".profile");
  const cons2= document.querySelector(".cons2");
  const amo2= document.querySelector(".amo2")
 
+ const finfirstCont1= document.querySelector(".finfirstCont1")
 
- const mainName= document.querySelector(".firstB h4");
+
+
+
+
+/////////////////////////////////////////////
+const mainName= document.querySelector(".firstB h4");
 const mainPara= document.querySelector(".firstB p");
 
+console.log(mainName)
+console.log(mainPara)
+
 const receiveName= arcadeMon.querySelector("h5");
-const amounts= document.querySelector(".amounts");
-  const finfirstCont1= document.querySelector(".finfirstCont1")  
+const amounts= document.querySelector(".amounts h6");
+   
+console.log(receiveName)
+console.log(amounts)
 
 
-  const secondH= document.querySelector(".secondBh4");
-  const secondP= document.querySelector(".secondB p");
 
-  
-  const thirdH= document.querySelector(".thirdBh4");
-  const thirdP =document.querySelector(".thirdB p");
+ const secondH= document.querySelector(".secondB h4");
+ const secondP= document.querySelector(".secondB p");
+ console.log(secondH)
+ console.log(secondP)
+ 
+ const thirdH= document.querySelector(".thirdB h4");
+ const thirdP =document.querySelector(".thirdB p");
+
+ console.log(thirdH)
+console.log(thirdP)
+
+firstB.addEventListener("click",function(e){
+    e.preventDefault();
+    receiveName.textContent=`${mainName.textContent}(Monthly)`;
+        amounts.textContent=mainPara.textContent;
+        })
+    
+        secondB.addEventListener("click",function(e){
+            e.preventDefault()
+            receiveName.textContent= `${secondH.textContent}(Monthly)`;
+    amounts.textContent= secondP.textContent;
+        })
+    
+        thirdB.addEventListener("click",function(e){
+            e.preventDefault();
+            receiveName.textContent= `${thirdH.textContent}(Monthly)`;
+            amounts.textContent= thirdP.textContent;
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////
+
   
 function Monthly(){
 if(online.checked){
@@ -190,23 +268,6 @@ if(profile.checked){
 
     Monthly()
 
-    firstB.addEventListener("click",function(e){
-        e.preventDefault();
-        receiveName.textContent=mainName.textContent;
-            amounts.textContent=mainPara.textContent;
-            })
-        
-            secondB.addEventListener("click",function(e){
-                e.preventDefault()
-                receiveName.textContent= secondH.textContent;
-        amounts.textContent= secondP.textContent;
-            })
-        
-            thirdB.addEventListener("click",function(e){
-                e.preventDefault();
-                receiveName.textContent= thirdH.textContent;
-                amounts.textContent= thirdP.textContent;
-            })
 
  
     
@@ -224,7 +285,6 @@ holl.classList.remove("hiddenes");
 
 
 realNumber.forEach(button=> {
-    console.log(button)
     if(button.classList.contains("third")){
         button.classList.add("first");
     }
@@ -287,7 +347,6 @@ fish.classList.add("finishHide");
     holl.classList.remove("hiddenes");
 
 realNumber.forEach(button=> {
-    console.log(button)
     if(button.classList.contains("fouth")){
         button.classList.remove("first");
     }
