@@ -336,6 +336,7 @@ margin-top: 20px;
     border: 2px solid hsl(243, 100%, 62%);
     padding:12px 50px;
     border-radius: 7px;
+    margin-bottom: 15px;
 }
 
 .checkbox{
@@ -357,4 +358,57 @@ padding-right: 20px;
 .monthlyCost p{
     font-size: 13px;
     color: hsl(243, 100%, 62%);
+}
+
+.changes{
+   margin-top: 70px;   
+}
+.hiddenes{
+    display: none;
+}
+
+.finish{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 70px 170px; 
+}
+    
+.finishContent h2{
+        font-size: 27px;
+        color: hsl(213, 96%, 18%);
+        padding-bottom: 12px;
+}
+.finishContent p{
+        font-size: 15px;
+        color:  hsl(231, 11%, 63%);
+        padding-bottom: 10px;
+}
+
+    
+.backgroundColor{
+    background-color: hsl(231, 100%, 99%);
+    margin-top: 22px;
+    padding: 20px 30px;
+    border-radius: 6px;
+}
+.finishingCont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid hsl(229, 24%, 87%);
+}
+.finishingCont h5{
+    font-size: 14px;
+    color: hsl(213, 96%, 18%);
+}
+
+.firstContent a{
+    text-decoration: none;
+    font-size: 14px;
+    padding-top: 3px;
 }
