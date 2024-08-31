@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    font-family: 'Ubuntu', sans-serif;
+    height:100%;
+}
+
+.motherFlex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 20px 20px;
+}
+
+.imageSideBar{
+    position: relative;
+}
+
+.imageSideBar img{
+    width: 300px;
+    height: 570px;
+}
+
+.sideBarcontent{
+    position: absolute;
+    top:50px;
+    left:45px;
+}
+
+.numberFlex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding-bottom: 30px;
+}
+
+.realNumber{
+    border-radius: 50%;
+    border: 1px solid hsl(229, 24%, 87%);
+    padding:5px 10px; 
+    margin-right: 20px;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    transition: all 3s ease;
+}
+
+.realNumber:hover{
+    background-color: hsl(206, 94%, 87%);
+    color: hsl(213, 96%, 18%);
+    transition: all 3s ease;
+}
+
+.besideNumber p{
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(213, 96%, 18%);
+    padding-bottom: 5px;
+}
+
+.besideNumber h4{
+    font-size: 14px;
+    color: hsl(229, 24%, 87%);
+}
+
+.formPalce{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 70px 150px;
+}
+
+.heading h2{
+    font-size: 27px;
+    color: hsl(213, 96%, 18%);
+    padding-bottom: 12px;
+}
+
+.heading p{
+    font-size: 15px;
+    color:  hsl(231, 11%, 63%);
+    padding-bottom: 40px;
+}
+
+
+.formPlace label {
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: block;
+    font-size: 15px;
+}
+
+.formPlace input{
+    padding:10px 125px;
+    border-radius: 5px;
+    border: 1px solid hsl(231, 11%, 63%);
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.nexStep{
+    margin-left: 330px;
+    background-color: hsl(213, 96%, 18%);
+    font-size: 14px;
+    font-size: 600;
+    border-radius: 10px;
+    padding:10px 15px;
+    color: hsl(0, 0%, 100%);
+    margin-top: 90px;
+    cursor: pointer;
+}
+
+
+.hidden{
+    display: none;
+}
+
+.monthlyplan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 70px 170px; 
+}
+
+
+.monthlyContent h2{
+    font-size: 27px;
+    color: hsl(213, 96%, 18%);
+    padding-bottom: 12px;
+}
+.monthlyContent  p{
+    font-size: 14px;
+    color:  hsl(231, 11%, 63%);
+    padding-bottom: 10px;
+}
+
+.boxFlex{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+.boxFlex{
+    margin-top: 20px;
+}
+
+.firstBox{
+    border: 1px solid hsl(231, 11%, 63%);
+    cursor: pointer;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 55px;
+    transition: all 3s ease;
+}
+.firstBox img{
+    width: 35px;
+    padding-bottom: 25px;
+}
+
+.firstBox h4{
+font-size: 14px;
+color: hsl(213, 96%, 18%);
+}
+.firstBox p{
+font-size: 12px;
+color: hsl(231, 11%, 63%);
+padding-top: 5px;
+font-weight: 500;
+}
+
+
+
+.secondBox{
+    border: 1px solid hsl(231, 11%, 63%);
+    cursor: pointer;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 45px;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: all 3s ease;
+}
+.secondBox img{
+    width: 35px;
+    padding-bottom: 25px;
+}
+
+.secondBox h4{
+font-size: 13px;
+color: hsl(213, 96%, 18%);
+}
+.secondBox p{
+font-size: 12px;
+color: hsl(231, 11%, 63%);
+padding-top: 5px;
+font-weight: 500;
+}
+
+
+
+.thirdBox{
+    border: 1px solid hsl(231, 11%, 63%);
+    cursor: pointer;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 65px;
+    transition: all 3s ease;
+}
+.thirdBox img{
+    width: 35px;
+    padding-bottom: 25px;
+}
+
+.thirdBox h4{
+font-size: 14px;
+color: hsl(213, 96%, 18%);
+}
+.thirdBox p{
+font-size: 12px;
+color: hsl(231, 11%, 63%);
+padding-top: 5px;
+font-weight: 500;
+}
+
+.firstBox:hover{
+    border: 2px solid hsl(243, 100%, 62%);
+    
+}
+
+.secondBox:hover{
+    border: 2px solid hsl(243, 100%, 62%);
+}
+.thirdBox:hover{
+    border: 2px solid hsl(243, 100%, 62%);
+}
+
+.toggleplace{
+    background-color:  hsl(229, 24%, 87%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 10px 15px;
+    margin-top: 25px;
+}
+
+.monthly{
+    padding-right: 20px;
+}
+
+.monthly h5{
+    font-size: 13px;
+}
+
+.ToggleOff{
+    padding-right: 20px;
+}
+.ToggleOff i{
+    color: white;
+    font-size: 20px;
+}
+
+.Back{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-top: 170px;
+}
+.goBack p{
+    font-size: 14px;
+    cursor: pointer;
+    color: hsl(231, 11%, 63%);
+    font-weight: 600;
+    transition: all 3s ease;
+}
+.goBack p:hover{
+    color:hsl(213, 96%, 18%);
+}
+
+.next{
+    background-color: hsl(213, 96%, 18%);
+    padding:9px 15px;
+    border-radius: 6px;
+    color:white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.hiddens{
+    display: none;
+}
+
+.placeOn{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+align-content: center;
+padding: 70px 170px; 
+}
+
+.placeOnContent h2{
+    font-size: 27px;
+    color: hsl(213, 96%, 18%);
+    padding-bottom: 12px;
+}
+
+.placeOnContent p{
+    font-size: 15px;
+    color:  hsl(231, 11%, 63%);
+    padding-bottom: 10px;
+}
+
+.borderPlace{
+margin-top: 20px;
+}
+
+.borderOne{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid hsl(243, 100%, 62%);
+    padding:12px 50px;
+    border-radius: 7px;
+}
+
+.checkbox{
+padding-right: 20px;
+}
+.borderContent{
+    margin-right: 20px;
+}
+.borderContent h5{
+    font-size: 15px;
+    color:hsl(213, 96%, 18%);
+    padding-bottom: 3px;
+}
+.borderContent p{
+    font-size: 13px;
+    color:  hsl(231, 11%, 63%);
+}
+
+.monthlyCost p{
+    font-size: 13px;
+    color: hsl(243, 100%, 62%);
+}
