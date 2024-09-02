@@ -17,13 +17,9 @@ body,html{
     padding: 20px 20px;
 }
 
-.imageSideBar{
-    position: relative;
-}
 
 .imageSideBar img{
     width: 300px;
-    height: 570px;
 }
 
 .sideBarcontent{
@@ -38,6 +34,7 @@ body,html{
     align-items: flex-start;
     align-content: flex-start;
     padding-bottom: 30px;
+    padding-left: 30px;
 }
 
 .realNumber{
@@ -565,3 +562,148 @@ padding-right: 20px;
 .ToggleOfff i{
     font-size: 20px;
 }
+
+
+.dis{
+    display: none;
+}
+
+.numberFlexes{
+    display: none;
+}
+
+
+@media (max-width:500px){ 
+.disp{
+    display:none;
+}
+
+.dis{
+    display: block;
+}
+
+.numberFlex{
+    display: none;
+}
+.num{
+    display: block;
+}
+
+.motherFlex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 0px 0px;
+    flex-direction: column;
+}
+.imageSideBar .small{
+    width: 100%;
+    height: 147px;
+    max-width: 100%;
+}
+.sideBarcontent {
+    position: relative;
+}
+.numberFlexes {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    top: -169px;
+    left: 22px;
+}
+
+.formPalce {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 0px 0px;
+    margin: auto;
+}
+
+.heading h2 {
+    font-size: 24px;
+    color: hsl(213, 96%, 18%);
+    padding-bottom: 12px;
+}
+
+.heading p {
+    font-size: 15px;
+    color: hsl(231, 11%, 63%);
+    padding-right: 25px;
+    padding-bottom: 31px;
+}
+
+.pad {
+    padding-bottom: 21px;
+}
+
+.pad label {
+    font-weight: 500;
+    margin-bottom: 2px;
+    display: block;
+    font-size: 15px;
+}
+
+.pad input {
+    padding: 10px 49px;
+    border-radius: 5px;
+    border: 1px solid hsl(231, 11%, 63%);
+    margin-bottom: 0px;
+    cursor: pointer;
+    display: block;
+}
+
+
+.nexStep {
+    margin-left: 200px;
+    background-color: hsl(213, 96%, 18%);
+    font-size: 14px;
+    border-radius: 6px;
+    padding: 10px 15px;
+    color: hsl(0, 0%, 100%);
+    margin-top: 90px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+    
+
+
+
