@@ -82,7 +82,7 @@ if(monthlyplan.classList.contains("hiddens")){
     formPalce.classList.add("hidden");    
 }
 
-console.log(monthlyplan)
+
 
 realNumber.forEach(button=> {
     if(button.classList.contains("first")){
@@ -143,12 +143,7 @@ toggleOn.addEventListener("click",function(){
     toggleOn.style.display="block";
   
     hid.classList.remove("hiddens");
-    year.classList.add("year");;
-
-
-
-
-    
+    year.classList.add("year");
 })
 
 
@@ -219,7 +214,7 @@ const amounts= document.querySelector(".amounts h6");
 
  let newArray= [];
 
-// console.log(newArray)
+console.log(newArray)
 
 
 firstB.addEventListener("click",function(e){
@@ -228,7 +223,7 @@ firstB.addEventListener("click",function(e){
     const numericValue = Number(mainPara.textContent);
     amounts.textContent = `$${numericValue}`;
     newArray.push(numericValue)
-    // console.log(typeof numericValue)
+    console.log(typeof numericValue)
         })
     
         secondB.addEventListener("click",function(e){
@@ -237,7 +232,7 @@ firstB.addEventListener("click",function(e){
             const numericValue = Number(secondP.textContent);
             amounts.textContent = `$${numericValue}`;
             newArray.push(numericValue);
-            // console.log(typeof numericValue)
+            console.log(typeof numericValue)
         })
     
         thirdB.addEventListener("click",function(e){
@@ -246,7 +241,7 @@ firstB.addEventListener("click",function(e){
             const numericValue = Number(thirdP.textContent);
     amounts.textContent = `$${numericValue}`;
     newArray.push(numericValue);
-    // console.log(typeof numericValue)
+    console.log(typeof numericValue)
         })
 
         
@@ -286,8 +281,11 @@ cons.textContent= hFive.textContent;
 const numericValue = Number(pmancost.textContent);
         amo.textContent = `$${numericValue}`;
         newArray.push(numericValue);
-        // console.log(typeof numericValue)
-        // console.log(amo.textContent);
+        console.log(typeof numericValue)
+        console.log(amo.textContent);
+}else{
+    cons.textContent="";
+    amo.textContent="";
 }
 
  }
@@ -299,9 +297,12 @@ if(large.checked){
     const numericValue = Number(pmancost2.textContent);
     amo2.textContent = `$${numericValue}`;
     newArray.push(numericValue); 
-    // console.log(typeof numericValue)
-    // console.log(amo2.textContent)
+    console.log(typeof numericValue)
+    console.log(amo2.textContent)
 
+}else{
+    cons2.textContent="";
+    amo2.textContent="";
 }
 
  }
@@ -329,11 +330,21 @@ if(profile.checked){
     finfirstCont1.appendChild(divCreation)
     finfirstCont1.appendChild(divCreation2)
     newArray.push(numericValue);
-    // console.log(typeof numericValue)
-    // console.log(pentacoast2.textContent)
-}
+    console.log(typeof numericValue)
+    console.log(pentacoast2.textContent)
 }
 
+}else{
+    const cons3Element = document.querySelector(".cons3");
+    const amo3Element = document.querySelector(".amo3");
+
+    if (cons3Element) {
+        cons3Element.innerHTML = "";
+    }
+    if (amo3Element) {
+        amo3Element.innerHTML = "";
+    }
+    }
 }
 profileContent()
 
@@ -458,267 +469,267 @@ realNumber.forEach(button=> {
 
 
 
-const firstBs= document.querySelector(".firstBs");
-const secondBs= document.querySelector(".secondBs");
-const thirdBs= document.querySelector(".thirdBs");
-const arcadeMons= document.querySelector(".arcadeMons")
+// const firstBs= document.querySelector(".firstBs");
+// const secondBs= document.querySelector(".secondBs");
+// const thirdBs= document.querySelector(".thirdBs");
+// const arcadeMons= document.querySelector(".arcadeMons")
 
 
 
 
-// /////////////////////////////////////////////
-const mainNames= document.querySelector(".firstBs h4");
-const mainParas= document.querySelector(".firstBs p");
-const receiveNames= arcadeMons.querySelector("h5");
-const amountss= document.querySelector(".amountss h6");
- const secondHs= document.querySelector(".secondBs h4");
- const secondPs= document.querySelector(".secondBs p");
- const thirdHs= document.querySelector(".thirdBs h4");
- const thirdPs=document.querySelector(".thirdBs p");
+// // /////////////////////////////////////////////
+// const mainNames= document.querySelector(".firstBs h4");
+// const mainParas= document.querySelector(".firstBs p");
+// const receiveNames= arcadeMons.querySelector("h5");
+// const amountss= document.querySelector(".amountss h6");
+//  const secondHs= document.querySelector(".secondBs h4");
+//  const secondPs= document.querySelector(".secondBs p");
+//  const thirdHs= document.querySelector(".thirdBs h4");
+//  const thirdPs=document.querySelector(".thirdBs p");
 
 
 
- let newArrays= [];
+//  let newArrays= [];
 
 
 
 
-firstBs.addEventListener("click",function(e){
-    e.preventDefault();
-    receiveNames.textContent=`${mainNames.textContent}(Monthly)`;
-    const numericValue = Number(mainParas.textContent);
-    amountss.textContent = `$${numericValue}`;
-    newArrays.push(numericValue)
-    // console.log(typeof numericValue)
-        })
+// firstBs.addEventListener("click",function(e){
+//     e.preventDefault();
+//     receiveNames.textContent=`${mainNames.textContent}(Monthly)`;
+//     const numericValue = Number(mainParas.textContent);
+//     amountss.textContent = `$${numericValue}`;
+//     newArrays.push(numericValue)
+//     // console.log(typeof numericValue)
+//         })
     
-        secondBs.addEventListener("click",function(e){
-            e.preventDefault()
-            receiveNames.textContent= `${secondHs.textContent}(Monthly)`;
-            const numericValue = Number(secondPs.textContent);
-            amountss.textContent = `$${numericValue}`;
-            newArrays.push(numericValue);
-            // console.log(typeof numericValue)
-        })
+//         secondBs.addEventListener("click",function(e){
+//             e.preventDefault()
+//             receiveNames.textContent= `${secondHs.textContent}(Monthly)`;
+//             const numericValue = Number(secondPs.textContent);
+//             amountss.textContent = `$${numericValue}`;
+//             newArrays.push(numericValue);
+//             // console.log(typeof numericValue)
+//         })
     
-        thirdBs.addEventListener("click",function(e){
-            e.preventDefault();
-            receiveNames.textContent= `${thirdHs.textContent}(Monthly)`;
-            const numericValue = Number(thirdPs.textContent);
-    amountss.textContent = `$${numericValue}`;
-    newArrays.push(numericValue);
-    // console.log(typeof numericValue)
-        })
+//         thirdBs.addEventListener("click",function(e){
+//             e.preventDefault();
+//             receiveNames.textContent= `${thirdHs.textContent}(Monthly)`;
+//             const numericValue = Number(thirdPs.textContent);
+//     amountss.textContent = `$${numericValue}`;
+//     newArrays.push(numericValue);
+//     // console.log(typeof numericValue)
+//         })
 
         
 
-// /////////////////////////////////////////////////////////
+// // /////////////////////////////////////////////////////////
 
 
 
-// // 170, 174, 178,180
+// // // 170, 174, 178,180
 
 
-const onlines= document.querySelector(".onlines");
-const larges= document.querySelector(".larges");
-const profiles= document.querySelector(".profiles");
+// const onlines= document.querySelector(".onlines");
+// const larges= document.querySelector(".larges");
+// const profiles= document.querySelector(".profiles");
 
 
- const hFives= document.querySelector(".hFives");
- const pmancosts= document.querySelector(".pmancosts");
+//  const hFives= document.querySelector(".hFives");
+//  const pmancosts= document.querySelector(".pmancosts");
 
- const hFive2s= document.querySelector(".hFive2s");
- const pmancost2s= document.querySelector(".pmancost2s");
+//  const hFive2s= document.querySelector(".hFive2s");
+//  const pmancost2s= document.querySelector(".pmancost2s");
 
- const hFive3s= document.querySelector(".hFive3s");
- const pmancost3s= document.querySelector(".pmancost3s");
+//  const hFive3s= document.querySelector(".hFive3s");
+//  const pmancost3s= document.querySelector(".pmancost3s");
 
 
 
- const conss= document.querySelector(".conss p");
- const amos= document.querySelector(".amos p")
- const cons2s= document.querySelector(".cons2s p");
- const amo2s= document.querySelector(".amo2s p")
- const finfirstCont1s= document.querySelector(".finfirstCont1s")
+//  const conss= document.querySelector(".conss p");
+//  const amos= document.querySelector(".amos p")
+//  const cons2s= document.querySelector(".cons2s p");
+//  const amo2s= document.querySelector(".amo2s p")
+//  const finfirstCont1s= document.querySelector(".finfirstCont1s")
 
- function OnlineContents() {
-if(onlines.checked){
-conss.textContent= hFives.textContent;
-const numericValue = Number(pmancosts.textContent);
-        amos.textContent = `$${numericValue}`;
-        newArrays.push(numericValue);
-        // console.log(typeof numericValue)
-        // console.log(amo.textContent);
-}
+//  function OnlineContents() {
+// if(onlines.checked){
+// conss.textContent= hFives.textContent;
+// const numericValue = Number(pmancosts.textContent);
+//         amos.textContent = `$${numericValue}`;
+//         newArrays.push(numericValue);
+//         // console.log(typeof numericValue)
+//         // console.log(amo.textContent);
+// }
 
- }
- OnlineContents() 
+//  }
+//  OnlineContents() 
 
- function LargeContents(){
-if(larges.checked){
-    cons2s.textContent= hFive2s.textContent;
-    const numericValue = Number(pmancost2s.textContent);
-    amo2s.textContent = `$${numericValue}`;
-    newArrays.push(numericValue); 
-    // console.log(typeof numericValue)
-    // console.log(amo2.textContent)
+//  function LargeContents(){
+// if(larges.checked){
+//     cons2s.textContent= hFive2s.textContent;
+//     const numericValue = Number(pmancost2s.textContent);
+//     amo2s.textContent = `$${numericValue}`;
+//     newArrays.push(numericValue); 
+//     // console.log(typeof numericValue)
+//     // console.log(amo2.textContent)
 
-}
+// }
 
- }
+//  }
 
- LargeContents()
- function profileContents(){
-if(profiles.checked){
-    if (!document.querySelector(".cons3s")) {
-    const divCreations= document.createElement("div");
-    divCreations.className="firstContentss cons3s";
-    let pentacoasts= document.createElement("p");
-    pentacoasts.textContent=hFive3s.textContent;
+//  LargeContents()
+//  function profileContents(){
+// if(profiles.checked){
+//     if (!document.querySelector(".cons3s")) {
+//     const divCreations= document.createElement("div");
+//     divCreations.className="firstContentss cons3s";
+//     let pentacoasts= document.createElement("p");
+//     pentacoasts.textContent=hFive3s.textContent;
 
-    divCreations.appendChild(pentacoasts);
+//     divCreations.appendChild(pentacoasts);
 
-    let divCreation2s= document.createElement("div");
-    divCreation2s.className="amounts amo3s";
+//     let divCreation2s= document.createElement("div");
+//     divCreation2s.className="amounts amo3s";
     
-    const numericValue = Number(pmancost3s.textContent)
-    let pentacoast2s= document.createElement("p");
-     pentacoast2s.textContent = `$${numericValue}`
+//     const numericValue = Number(pmancost3s.textContent)
+//     let pentacoast2s= document.createElement("p");
+//      pentacoast2s.textContent = `$${numericValue}`
     
-    divCreation2s.appendChild(pentacoast2s);
+//     divCreation2s.appendChild(pentacoast2s);
 
-    finfirstCont1s.appendChild(divCreations)
-    finfirstCont1s.appendChild(divCreation2s)
-    newArrays.push(numericValue);
-    // console.log(typeof numericValue)
-    // console.log(pentacoast2.textContent)
-}
-}
+//     finfirstCont1s.appendChild(divCreations)
+//     finfirstCont1s.appendChild(divCreation2s)
+//     newArrays.push(numericValue);
+//     // console.log(typeof numericValue)
+//     // console.log(pentacoast2.textContent)
+// }
+// }
 
-}
-profileContents()
+// }
+// profileContents()
 
-const tots= document.querySelector(".tots");
-
-
-function FindTotals(arrs) {
-    return arrs.reduce((acumm, num) => acumm + num, 0);
-}
-const results = FindTotals(newArrays);
-// console.log(result)
-tots.textContent = `$${results.toFixed(2)}`;
+// const tots= document.querySelector(".tots");
 
 
+// function FindTotals(arrs) {
+//     return arrs.reduce((acumm, num) => acumm + num, 0);
+// }
+// const results = FindTotals(newArrays);
+// // console.log(result)
+// tots.textContent = `$${results.toFixed(2)}`;
 
 
-onlines.addEventListener("change", OnlineContents);
-larges.addEventListener("change", LargeContents);
-profiles.addEventListener("change",profileContents);
+
+
+// onlines.addEventListener("change", OnlineContents);
+// larges.addEventListener("change", LargeContents);
+// profiles.addEventListener("change",profileContents);
 
 
    
-// ///////////////////////////////////////////////////////////
-// ///total
+// // ///////////////////////////////////////////////////////////
+// // ///total
 
 
-//  ///////////////////////////////////////////////////
+// //  ///////////////////////////////////////////////////
     
     
     
-    const plans= document.querySelector(".plans")
+//     const plans= document.querySelector(".plans")
 
-const nexxs=document.querySelector(".nexxs");
-const holls= document.querySelector(".holls");
-const fishs= document.querySelector(".fishs")
-nexxs.addEventListener("click",function(e){
-e.preventDefault();
-plans.classList.add("year");
-holls.classList.remove("hiddenes");
-
-
-realNumber.forEach(button=> {
-    if(button.classList.contains("third")){
-        button.classList.add("first");
-    }
-     if(button.classList.contains("second")){
-            button.classList.remove("color")
-        }  
-})
-})
-
-const baccks= document.querySelector(".baccks");
-
-baccks.addEventListener("click",function(e){
-    plans.classList.remove("year");
-holls.classList.add("hiddenes");
+// const nexxs=document.querySelector(".nexxs");
+// const holls= document.querySelector(".holls");
+// const fishs= document.querySelector(".fishs")
+// nexxs.addEventListener("click",function(e){
+// e.preventDefault();
+// plans.classList.add("year");
+// holls.classList.remove("hiddenes");
 
 
-realNumber.forEach(button=> {
-    console.log(button)
-    if(button.classList.contains("third")){
-        button.classList.remove("first");
-    }
-     if(button.classList.contains("second")){
-            button.classList.add("color")
-        }  
-})
-})
+// realNumber.forEach(button=> {
+//     if(button.classList.contains("third")){
+//         button.classList.add("first");
+//     }
+//      if(button.classList.contains("second")){
+//             button.classList.remove("color")
+//         }  
+// })
+// })
+
+// const baccks= document.querySelector(".baccks");
+
+// baccks.addEventListener("click",function(e){
+//     plans.classList.remove("year");
+// holls.classList.add("hiddenes");
 
 
+// realNumber.forEach(button=> {
+//     console.log(button)
+//     if(button.classList.contains("third")){
+//         button.classList.remove("first");
+//     }
+//      if(button.classList.contains("second")){
+//             button.classList.add("color")
+//         }  
+// })
+// })
 
 
 
 
-const nets= document.querySelector(".nets")
 
 
-nets.addEventListener("click",function(e){
-    e.preventDefault();
-    fishs.classList.remove("finishHide");
-    holls.classList.add("hiddenes");
+// const nets= document.querySelector(".nets")
+
+
+// nets.addEventListener("click",function(e){
+//     e.preventDefault();
+//     fishs.classList.remove("finishHide");
+//     holls.classList.add("hiddenes");
     
     
-    realNumber.forEach(button=> {
-        if(button.classList.contains("fouth")){
-            button.classList.add("first");
-        }
+//     realNumber.forEach(button=> {
+//         if(button.classList.contains("fouth")){
+//             button.classList.add("first");
+//         }
         
-         if(button.classList.contains("third")){
-                button.classList.remove("first")
-            }  
-    })
+//          if(button.classList.contains("third")){
+//                 button.classList.remove("first")
+//             }  
+//     })
 
-    })
+//     })
     
-   const barks= document.querySelector(".barks");
+//    const barks= document.querySelector(".barks");
 
-   barks.addEventListener("click",function(e){
+//    barks.addEventListener("click",function(e){
   
-e.preventDefault();
-fishs.classList.add("finishHide");
-    holls.classList.remove("hiddenes");
+// e.preventDefault();
+// fishs.classList.add("finishHide");
+//     holls.classList.remove("hiddenes");
 
-realNumber.forEach(button=> {
-    if(button.classList.contains("fouth")){
-        button.classList.remove("first");
-    }
-     if(button.classList.contains("third")){
-            button.classList.remove("color");
-            button.classList.add("first")
-        }
-})
-})
+// realNumber.forEach(button=> {
+//     if(button.classList.contains("fouth")){
+//         button.classList.remove("first");
+//     }
+//      if(button.classList.contains("third")){
+//             button.classList.remove("color");
+//             button.classList.add("first")
+//         }
+// })
+// })
 
 
 
-const thankYou = document.querySelector(".thankYou");
-const confirm= document.querySelectorAll(".confirm")
+// const thankYou = document.querySelector(".thankYou");
+// const confirm= document.querySelectorAll(".confirm")
 
-confirm.forEach(btn=> {
-    btn.addEventListener("click", function(e){
-        e.preventDefault();
-        thankYou.classList.remove("hidy");
-        fishs.classList.add("finishHide");
-        fish.classList.add("finishHide")
-    })
-})
+// confirm.forEach(btn=> {
+//     btn.addEventListener("click", function(e){
+//         e.preventDefault();
+//         thankYou.classList.remove("hidy");
+//         fishs.classList.add("finishHide");
+//         fish.classList.add("finishHide")
+//     })
+// })
