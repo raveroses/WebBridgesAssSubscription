@@ -223,7 +223,8 @@ firstB.addEventListener("click",function(e){
     const numericValue = Number(mainPara.textContent);
     amounts.textContent = `$${numericValue}`;
     newArray.push(numericValue)
-    console.log(typeof numericValue)
+    const result= FindTotal(newArray)
+    tot.textContent = `$${result.toFixed(2)}`;
         })
     
         secondB.addEventListener("click",function(e){
@@ -232,7 +233,9 @@ firstB.addEventListener("click",function(e){
             const numericValue = Number(secondP.textContent);
             amounts.textContent = `$${numericValue}`;
             newArray.push(numericValue);
-            console.log(typeof numericValue)
+            const result= FindTotal(newArray)
+        tot.textContent = `$${result.toFixed(2)}`;
+             
         })
     
         thirdB.addEventListener("click",function(e){
@@ -241,7 +244,8 @@ firstB.addEventListener("click",function(e){
             const numericValue = Number(thirdP.textContent);
     amounts.textContent = `$${numericValue}`;
     newArray.push(numericValue);
-    console.log(typeof numericValue)
+    const result= FindTotal(newArray)
+    tot.textContent = `$${result.toFixed(2)}`;
         })
 
         
@@ -252,6 +256,9 @@ firstB.addEventListener("click",function(e){
 
 // 170, 174, 178,180
 
+const tot= document.querySelector(".tot");
+   const result= FindTotal(newArray)
+tot.textContent = `$${result.toFixed(2)}`;
 
 const online= document.querySelector(".online");
 const large= document.querySelector(".large");
@@ -283,9 +290,20 @@ const numericValue = Number(pmancost.textContent);
         newArray.push(numericValue);
         console.log(typeof numericValue)
         console.log(amo.textContent);
+        const result= FindTotal(newArray)
+        tot.textContent = `$${result.toFixed(2)}`;
 }else{
     cons.textContent="";
     amo.textContent="";
+    const numericValue = Number(pmancost.textContent);
+    const find= newArray.indexOf(numericValue);
+
+    if(find > -1){
+        newArray.splice(find,1)
+    };
+    const result= FindTotal(newArray)
+        tot.textContent = `$${result.toFixed(2)}`;
+
 }
 
  }
@@ -299,10 +317,20 @@ if(large.checked){
     newArray.push(numericValue); 
     console.log(typeof numericValue)
     console.log(amo2.textContent)
-
+    const result= FindTotal(newArray)
+    tot.textContent = `$${result.toFixed(2)}`;
 }else{
     cons2.textContent="";
     amo2.textContent="";
+    const numericValue = Number(pmancost2.textContent);
+    const find= newArray.indexOf(numericValue);
+
+    if(find > -1){
+        newArray.splice(find,1)
+    };
+    const result= FindTotal(newArray)
+        tot.textContent = `$${result.toFixed(2)}`;
+
 }
 
  }
@@ -330,8 +358,9 @@ if(profile.checked){
     finfirstCont1.appendChild(divCreation)
     finfirstCont1.appendChild(divCreation2)
     newArray.push(numericValue);
-    console.log(typeof numericValue)
-    console.log(pentacoast2.textContent)
+    const result= FindTotal(newArray)
+    tot.textContent = `$${result.toFixed(2)}`;
+    
 }
 
 }else{
@@ -340,23 +369,37 @@ if(profile.checked){
 
     if (cons3Element) {
         cons3Element.innerHTML = "";
+        const numericValue = Number(pmancost3.textContent);
+    const find= newArray.indexOf(numericValue);
+
+    if(find > -1){
+        newArray.splice(find,1)
+    };
+    const result= FindTotal(newArray)
+        tot.textContent = `$${result.toFixed(2)}`;
+
     }
     if (amo3Element) {
         amo3Element.innerHTML = "";
+        const result= FindTotal(newArray)
+        tot.textContent = `$${result.toFixed(2)}`;
     }
+
+    
     }
 }
 profileContent()
 
-const tot= document.querySelector(".tot");
+
 
 
 function FindTotal(arr) {
     return arr.reduce((acumm, num) => acumm + num, 0);
 }
-const result = FindTotal(newArray);
-// console.log(result)
-tot.textContent = `$${result.toFixed(2)}`;
+
+
+
+
 
 
 
